@@ -53,9 +53,9 @@ for source, url in news_sources.items():
 # Create DataFrame
 df = pd.DataFrame(results)
 
-# Write HTML dashboard
+# Write HTML dashboard as index.html
 html = df.to_html(index=False, render_links=True, escape=False, justify="center", border=1)
-with open("ipo_dashboard.html", "w", encoding="utf-8") as f:
+with open("index.html", "w", encoding="utf-8") as f:
     f.write(f"<html><head><title>IPO Dashboard</title></head><body>")
     f.write(f"<h2>IPO Intention Dashboard - Last Updated: {timestamp}</h2>")
     f.write(html)
