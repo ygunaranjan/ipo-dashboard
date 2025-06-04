@@ -62,6 +62,6 @@ with open("index.html", "w", encoding="utf-8") as f:
     f.write("</body></html>")
 
 # Git auto-commit & push
-os.system("git add ipo_dashboard.html")
+os.system("git add index.html")
 os.system("git commit -m 'Auto update dashboard'")
 os.system("git push origin main")
